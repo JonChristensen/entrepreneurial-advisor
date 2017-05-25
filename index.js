@@ -30,15 +30,15 @@ var handlers = {
     },
     'Unhandled': function () {
 
-               /*this.handler.state = GAME_STATES.START;
-        this.emit(':tell', 'you have 22 bucks');*/
-        /*this.handler.state = GAME_STATES.START;
+        this.handler.state = GAME_STATES.START;
+        this.emit(':tell', 'you have 22 bucks');
+        this.handler.state = GAME_STATES.START;
         // call the CapitalOne function 
         bankAccountStarter.create_account(function(error, response, body) {
-        console.log('error:', error); // Print the error if one occurred
-  console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-  console.log('body:', body); // Print the HTML for the Google homepage.
-  console.log("HI")});*/
+            console.log('error:', error); // Print the error if one occurred
+            console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
+            console.log('body:', body); // Print the HTML for the Google homepage.
+        });
         // inform user the new account number
         var speechOutput;
         var intent = this.event.request.intent.name;
