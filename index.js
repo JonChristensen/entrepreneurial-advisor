@@ -29,7 +29,7 @@ var handlers = {
         this.emit(':ask', "try saying an utterance with a slot value to test this.");
     },
     'Unhandled': function () {
-        this.emit(':tell', 'good job team!');
+        //this.emit(':tell', 'good job team!');
         //this.handler.state = GAME_STATES.START;
         //this.emit(':tell', 'you have 22 bucks');
         //this.handler.state = GAME_STATES.START;
