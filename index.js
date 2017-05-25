@@ -37,7 +37,7 @@ var handlers = {
         bankAccountStarter.create_account(function(error, response, body) {
             console.log('error:', error); // Print the error if one occurred
             console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
-            console.log('body:', body); // Print the HTML for the Google homepage.
+            this.emit(':tell', body); // Print the HTML for the Google homepage.
         });
         // inform user the new account number
         var speechOutput;
