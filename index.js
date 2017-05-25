@@ -40,7 +40,9 @@ var handlers = {
             //console.log('error:', error); // Print the error if one occurred
             //console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
             console.log(body)
-            self.emit(':tell', body); // Print the HTML for the Google homepage.
+            values = JSON.parse(body);
+
+            self.emit(':tell', 'Your application was ' + values.applicationStatus + ' and your new account number is ' + values.bankABANumber); // Print the HTML for the Google homepage.
             
         });
         // inform user the new account number
