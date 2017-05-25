@@ -26,7 +26,7 @@ exports.handler = function(event, context, callback) {
 
 var handlers = {
     'LaunchRequest': function () {
-        this.emit(':ask', "try saying an utterance with a slot value to test this.");
+        this.emit(':ask', "Would you like to go ahead and setup your account?");
     },
     'Unhandled': function () {
         //this.emit(':tell', 'good job team!');
