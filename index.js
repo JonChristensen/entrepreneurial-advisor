@@ -34,12 +34,12 @@ var handlers = {
         //this.emit(':tell', 'you have 22 bucks');
         //this.handler.state = GAME_STATES.START;
         // call the CapitalOne function 
-        //bankAccountStarter.create_account(function(error, response, body) {
+        bankAccountStarter.create_account(function(error, response, body) {
             //console.log('error:', error); // Print the error if one occurred
             //console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
             //this.emit(':tell', body); // Print the HTML for the Google homepage.
-          //  this.emit(':tell', 'good job team!');
-        //});
+            this.emit(':tell', 'real good job team!');
+        });
         // inform user the new account number
         /*var speechOutput;
         var intent = this.event.request.intent.name;
