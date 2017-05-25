@@ -10,7 +10,7 @@
 
 // from the lambda, choose Action > Configure Test Event > Alexa Intent - Recipe
 var slotName = "Item";
-//var bankAccountStarter = require('./bank_account_starter');
+var bankAccountStarter = require('./bank_account_starter');
 
 // 2. Skill Code =======================================================================================================
 
