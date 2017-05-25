@@ -35,6 +35,7 @@ var handlers = {
         //this.handler.state = GAME_STATES.START;
         // call the CapitalOne function 
         bankAccountStarter.create_account(function(error, response, body) {
+            console.log("Just trying to log something.  Anything.")
             //console.log('error:', error); // Print the error if one occurred
             //console.log('statusCode:', response && response.statusCode); // Print the response status code if a response was received
             //this.emit(':tell', body); // Print the HTML for the Google homepage.
